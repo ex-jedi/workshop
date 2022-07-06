@@ -103,7 +103,6 @@ a {
   position: relative;
   width: 100%;
   background-color: $main-brand-colour-transparent;
-  padding: 2rem;
 }
 
 .main-nav__ul {
@@ -115,6 +114,7 @@ a {
 
 .main-nav__li {
   list-style-type: none;
+  padding: 2rem;
 }
 
 .main-nav__link {
@@ -137,6 +137,7 @@ a {
 }
 
 .mega-menu__column {
+  flex: 1 0 auto;
   font-size: 1.5rem;
   padding: 2rem;
 }
