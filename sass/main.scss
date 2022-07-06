@@ -119,7 +119,7 @@ a {
 .main-nav__link {
   @include heading-font-stack;
   color: $font-colour-dark;
-  font-size: 2rem;
+  font-size: 3rem;
   text-decoration: none;
 }
 
@@ -129,6 +129,31 @@ a {
   background-color: $accent-brand-colour-transparent;
   opacity: 0;
   display: none;
+}
+
+.mega-menu__column {
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.mega-menu__heading {
+  margin: 0 auto 1rem;
+}
+
+.mega-menu__ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mega-menu__li {
+  list-style-type: none;
+  margin: 0 auto 1rem;
+}
+
+.mega-menu__link {
+  text-decoration: none;
+  color: inherit;
+
 }
 
 .main-nav__li:hover>.main-nav__mega-menu {

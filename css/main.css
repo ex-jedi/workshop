@@ -84,7 +84,7 @@ a {
   font-weight: 700;
   font-style: normal;
   color: #252525;
-  font-size: 2rem;
+  font-size: 3rem;
   text-decoration: none;
 }
 
@@ -100,6 +100,30 @@ a {
   background-color: rgba(3, 186, 252, 0.368627451);
   opacity: 0;
   display: none;
+}
+
+.mega-menu__column {
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.mega-menu__heading {
+  margin: 0 auto 1rem;
+}
+
+.mega-menu__ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mega-menu__li {
+  list-style-type: none;
+  margin: 0 auto 1rem;
+}
+
+.mega-menu__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .main-nav__li:hover > .main-nav__mega-menu {
