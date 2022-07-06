@@ -28,9 +28,14 @@ html {
 }
 
 body {
+  @include main-font-stack;
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
+}
+
+.page-wrapper {
+  padding: 5rem;
 }
 
 // *=========================================
@@ -39,9 +44,6 @@ body {
 
 //********** Headings**********
 
-h1 {
-  color: #f00;
-}
 
 //********** Containers **********
 

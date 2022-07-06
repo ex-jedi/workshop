@@ -17,9 +17,15 @@
 //*=========================================
 
 //* Font Stacks
-@mixin main-font-stack {
-  font-family: 'futura-pt', sans-serif;
+@mixin heading-font-stack {
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  font-style: normal;
+}
+
+@mixin main-font-stack {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
