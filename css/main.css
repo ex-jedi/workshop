@@ -18,6 +18,10 @@ body {
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
+  background-image: url("/images/dog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .page-wrapper {
@@ -48,6 +52,40 @@ img {
 a {
   text-decoration: underline;
   color: #3c3cf6;
+}
+
+.main-nav {
+  width: 100%;
+  background-color: rgba(222, 166, 53, 0.368627451);
+}
+
+.main-nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.main-nav__li {
+  list-style-type: none;
+}
+
+.main-nav__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #252525;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 .visually-hidden {

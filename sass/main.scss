@@ -32,6 +32,10 @@ body {
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
+  background-image: url('/images/dog.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .page-wrapper {
@@ -95,6 +99,29 @@ a {
 // ** Main Nav  **
 // *=========================================
 
+.main-nav {
+  width: 100%;
+  background-color: $main-brand-colour-transparent;
+}
+
+.main-nav__ul {
+  @include flex(row);
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.main-nav__li {
+  list-style-type: none;
+}
+
+.main-nav__link {
+  @include heading-font-stack;
+  color: $font-colour-dark;
+  font-size: 2rem;
+  text-decoration: none;
+}
 
 //********** Responsive Styles **********
 
