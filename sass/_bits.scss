@@ -18,22 +18,30 @@
 
 //* Font Stacks
 @mixin heading-font-stack {
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 @mixin main-font-stack {
-  font-family: 'futura-pt', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
+//********** Sizing & spacing **********
 
 //*=========================================
 //** Colours  **
 //*=========================================
 
-//  Colours
+//TODO: Customise brand colours
+
+// Main brand Colours
+$main-brand-colour: #dea635;
+$main-brand-colour-transparent: #dea6355e;
+$accent-brand-colour: #03bafc;
+$accent-brand-colour-transparent: #03bafc5e;
 $background-colour-light: #f4f1f0;
 $background-colour-dark: #1f1f1f;
 
