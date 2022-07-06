@@ -79,6 +79,8 @@ body {
   background-color: rgba(3, 186, 252, 0.368627451);
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .mega-menu__column {
