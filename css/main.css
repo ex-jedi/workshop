@@ -55,6 +55,7 @@ a {
 }
 
 .main-nav {
+  position: relative;
   width: 100%;
   background-color: rgba(222, 166, 53, 0.368627451);
 }
@@ -86,6 +87,25 @@ a {
   color: #252525;
   font-size: 2rem;
   text-decoration: none;
+}
+
+.main-nav__mega-menu {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5rem;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: rgba(3, 186, 252, 0.368627451);
 }
 
 .visually-hidden {

@@ -100,6 +100,7 @@ a {
 // *=========================================
 
 .main-nav {
+  position: relative;
   width: 100%;
   background-color: $main-brand-colour-transparent;
 }
@@ -122,6 +123,20 @@ a {
   font-size: 2rem;
   text-decoration: none;
 }
+
+.main-nav__mega-menu {
+  position: absolute;
+  @include flex(row);
+  justify-content: space-around;
+  padding: 5rem;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: $accent-brand-colour-transparent;
+}
+
+
 
 //********** Responsive Styles **********
 
