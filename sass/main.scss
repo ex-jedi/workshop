@@ -110,7 +110,6 @@ a {
   justify-content: space-evenly;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 .main-nav__li {
@@ -125,18 +124,17 @@ a {
 }
 
 .main-nav__mega-menu {
+  @include flex(column);
   position: absolute;
-  @include flex(row);
-  justify-content: space-around;
-  padding: 5rem;
-  top: 64px;
-  left: 0;
-  width: 100%;
-  font-size: 1.5rem;
   background-color: $accent-brand-colour-transparent;
+  opacity: 0;
+  display: none;
 }
 
-
+.main-nav__li:hover>.main-nav__mega-menu {
+  opacity: 1;
+  display: block;
+}
 
 //********** Responsive Styles **********
 
