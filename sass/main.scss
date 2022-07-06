@@ -124,11 +124,14 @@ a {
 }
 
 .main-nav__mega-menu {
-  @include flex(column);
   position: absolute;
+  left: 0;
+  @include flex(row);
+  justify-content: space-evenly;
+  width: 100%;
   background-color: $accent-brand-colour-transparent;
   opacity: 0;
-  display: none;
+  visibility: hidden;
 }
 
 .mega-menu__column {
@@ -158,7 +161,7 @@ a {
 
 .main-nav__li:hover>.main-nav__mega-menu {
   opacity: 1;
-  display: block;
+  visibility: visible;
 }
 
 //********** Responsive Styles **********

@@ -89,17 +89,22 @@ a {
 }
 
 .main-nav__mega-menu {
+  position: absolute;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
   background-color: rgba(3, 186, 252, 0.368627451);
   opacity: 0;
-  display: none;
+  visibility: hidden;
 }
 
 .mega-menu__column {
@@ -128,7 +133,7 @@ a {
 
 .main-nav__li:hover > .main-nav__mega-menu {
   opacity: 1;
-  display: block;
+  visibility: visible;
 }
 
 .visually-hidden {
