@@ -17,9 +17,15 @@
 //*=========================================
 
 //* Font Stacks
-@mixin main-font-stack {
+@mixin heading-font-stack {
   font-family: 'futura-pt', sans-serif;
   font-weight: 700;
+  font-style: normal;
+}
+
+@mixin main-font-stack {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -27,29 +33,13 @@
 //** Colours  **
 //*=========================================
 
-
 //  Colours
 $background-colour-light: #f4f1f0;
 $background-colour-dark: #1f1f1f;
 
-// Main Font Colours
+//  Font Colours
 $font-colour-light: #f4f1f0;
 $font-colour-dark: #252525;
-
-// Link Colours
-$link-colour: #3c3cf6;
-$link-visited: #8608fb;
-
-//*=========================================
-//** Effects and Animation  **
-//*=========================================
-
-//********** Transition Timings**********
-
-
-//* Timings
-
-//********** Keyframes **********
 
 //*=========================================
 //** Media Queries   **
@@ -103,20 +93,4 @@ $link-visited: #8608fb;
   @media (max-height: $point) and (orientation: $orientation) {
     @content;
   }
-}
-
-//*=========================================
-//** Accessability **
-//*=========================================
-
-//********** Visually Hidden  **********
-
-@mixin visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
