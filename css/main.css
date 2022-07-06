@@ -47,7 +47,7 @@ body {
 
 .main-nav__li {
   list-style-type: none;
-  padding: 2rem;
+  padding: 2rem 4rem;
 }
 
 .main-nav__link {
