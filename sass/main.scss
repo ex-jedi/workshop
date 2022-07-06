@@ -103,6 +103,7 @@ a {
   position: relative;
   width: 100%;
   background-color: $main-brand-colour-transparent;
+  padding: 2rem;
 }
 
 .main-nav__ul {
@@ -126,6 +127,7 @@ a {
 .main-nav__mega-menu {
   position: absolute;
   left: 0;
+  margin-top: 2rem;
   @include flex(row);
   justify-content: space-evenly;
   width: 100%;

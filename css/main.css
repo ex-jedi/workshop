@@ -58,6 +58,7 @@ a {
   position: relative;
   width: 100%;
   background-color: rgba(222, 166, 53, 0.368627451);
+  padding: 2rem;
 }
 
 .main-nav__ul {
@@ -91,6 +92,7 @@ a {
 .main-nav__mega-menu {
   position: absolute;
   left: 0;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
