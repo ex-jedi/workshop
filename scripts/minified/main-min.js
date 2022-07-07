@@ -1,2 +1,2 @@
-console.log("Hi");
+window.onscroll=function(){!function(){const e=(document.body.scrollTop||document.documentElement.scrollTop)/(document.documentElement.scrollHeight-document.documentElement.clientHeight)*100;document.getElementById("progBar").style.width=`${e}%`}()};
 //# sourceMappingURL=main-min.js.map
