@@ -1,2 +1,2 @@
-window.onscroll=function(){!function(){const e=(document.body.scrollTop||document.documentElement.scrollTop)/(document.documentElement.scrollHeight-document.documentElement.clientHeight)*100;document.getElementById("progBar").style.width=`${e}%`}()};
+!function(){const e=document.querySelector(".toggle-theme-button"),t=document.documentElement,n=document.querySelector(".current-theme-text");e.addEventListener("click",(function(){const e="light"===t.className?"dark":"light";t.className=e,n.innerText=e}))}();
 //# sourceMappingURL=main-min.js.map
