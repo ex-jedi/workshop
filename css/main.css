@@ -23,8 +23,28 @@ body {
   font-style: normal;
 }
 
-h1 {
-  font-size: 4rem;
+.main-nav__mega-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  left: 0;
+  margin-top: 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: rgba(3, 186, 252, 0.368627451);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 p {
