@@ -10,20 +10,24 @@
 
 :root.light {
   --background-colour: #fff;
+  --accent-background-colour: #808080;
+  --accent-background-colour-inverted: #ffffff;
   --font-colour: #343434;
   --border-colour: #000;
   --background-colour-inverted: #000000;
   --font-colour-inverted: #ffffff;
-  --border-colour-inverted: rgb(190, 188, 188);
+  --border-colour-inverted: #bebcbc;
 }
 
 :root.dark {
   --background-colour: #343434;
+  --accent-background-colour: #fff;
+  --accent-background-colour-inverted: #000000;
   --font-colour: #ffffff;
-  --border-colour: rgb(255, 255, 255);
+  --border-colour: #ffffff;
   --background-colour-inverted: #ffffff;
   --font-colour-inverted: #000000;
-  --border-colour-inverted: rgb(103, 103, 103);
+  --border-colour-inverted: #676767;
 }
 
 // *=========================================
@@ -106,7 +110,7 @@ p {
   cursor: pointer;
   width: 70px;
   height: 40px;
-  background-color: grey;
+  background-color: var(--accent-background-colour);
   display: block;
   border-radius: 100px;
   position: absolute;
@@ -119,14 +123,15 @@ p {
   left: 5px;
   width: 30px;
   height: 30px;
-  background: #ffffff;
+  background: var(--accent-background-colour-inverted);
   border-radius: 90px;
   transition: 0.3s;
   z-index: 2;
 }
 
 #theme-toggle:checked::before {
-  background-color: #000000;
+  background-color: var(--accent-background-colour);
+  ;
 }
 
 #theme-toggle:checked::after {
