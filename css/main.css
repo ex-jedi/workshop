@@ -1,3 +1,21 @@
+:root.light {
+  --background-colour: #fff;
+  --font-colour: #343434;
+  --border-colour: #000;
+  --background-colour-inverted: #000000;
+  --font-colour-inverted: #ffffff;
+  --border-colour-inverted: rgb(190, 188, 188);
+}
+
+:root.dark {
+  --background-colour: #343434;
+  --font-colour: #ffffff;
+  --border-colour: rgb(255, 255, 255);
+  --background-colour-inverted: #ffffff;
+  --font-colour-inverted: #000000;
+  --border-colour-inverted: rgb(103, 103, 103);
+}
+
 html {
   font-size: 10px;
   overflow-x: hidden;
@@ -18,5 +36,41 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  background-color: var(--background-colour);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.main {
+  padding: 100px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--font-colour);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+p {
+  font-size: 2rem;
+  color: var(--font-colour);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.toggle-theme-button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  color: var(--font-colour);
+  background-color: var(--background-colour);
+  border: 4px solid var(--border-colour);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.toggle-theme-button:hover {
+  color: var(--font-colour-inverted);
+  background-color: var(--background-colour-inverted);
+  border: 4px solid var(--border-colour-inverted);
 }
 /*# sourceMappingURL=main.css.map */
