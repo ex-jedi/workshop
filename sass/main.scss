@@ -131,10 +131,8 @@ p {
 
 #theme-toggle:checked::before {
   background-color: var(--accent-background-colour);
-  ;
 }
 
 #theme-toggle:checked::after {
   transform: translateX(100%);
-
 }

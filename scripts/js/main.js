@@ -12,7 +12,6 @@ const themeText = document.querySelector('.current-theme-text');
 
 function toggleTheme() {
   const switchClass = toggleThemeSwitch.checked ? 'dark' : 'light';
-  console.log(switchClass);
   root.className = switchClass;
   themeText.innerText = switchClass;
 }
