@@ -1,19 +1,23 @@
 :root.light {
   --background-colour: #fff;
+  --accent-background-colour: #808080;
+  --accent-background-colour-inverted: #ffffff;
   --font-colour: #343434;
   --border-colour: #000;
   --background-colour-inverted: #000000;
   --font-colour-inverted: #ffffff;
-  --border-colour-inverted: rgb(190, 188, 188);
+  --border-colour-inverted: #bebcbc;
 }
 
 :root.dark {
   --background-colour: #343434;
+  --accent-background-colour: #fff;
+  --accent-background-colour-inverted: #000000;
   --font-colour: #ffffff;
-  --border-colour: rgb(255, 255, 255);
+  --border-colour: #ffffff;
   --background-colour-inverted: #ffffff;
   --font-colour-inverted: #000000;
-  --border-colour-inverted: rgb(103, 103, 103);
+  --border-colour-inverted: #676767;
 }
 
 html {
@@ -53,6 +57,7 @@ h1 {
   color: var(--font-colour);
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  margin: 10rem auto 2rem;
 }
 
 p {
@@ -77,53 +82,54 @@ p {
   border: 4px solid var(--border-colour-inverted);
 }
 
-.main-nav__mega-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: absolute;
-  left: 0;
-  margin-top: 2rem;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 100%;
-  height: 300px;
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
   overflow: hidden;
-  background-color: rgba(3, 186, 252, 0.368627451);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
-p {
-  font-size: 2rem;
+#theme-toggle {
+  position: relative;
+  height: 0;
+  width: 0;
 }
 
-.overall {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #f1f1f1;
+#theme-toggle:before {
+  content: "";
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+  background-color: var(--accent-background-colour);
+  display: block;
+  border-radius: 100px;
+  position: absolute;
 }
 
-container {
-  width: 100%;
-  height: 10px;
-  background: #ccc;
+#theme-toggle:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background: var(--accent-background-colour-inverted);
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 2;
 }
 
-.progress {
-  height: 10px;
-  background: #3784ff;
-  width: 0%;
-  -webkit-transition: 0.1s all ease;
-  transition: 0.1s all ease;
+#theme-toggle:checked::before {
+  background-color: var(--accent-background-colour);
+}
+
+#theme-toggle:checked::after {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 /*# sourceMappingURL=main.css.map */
