@@ -61,6 +61,7 @@ h1 {
   font-size: 4rem;
   color: var(--font-colour);
   transition: .3s all ease;
+  margin: 10rem auto 2rem;
 }
 
 p {
@@ -82,4 +83,48 @@ p {
     background-color: var(--background-colour-inverted);
     border: 4px solid var(--border-colour-inverted);
   }
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+#theme-toggle {
+  position: relative;
+  height: 0;
+  width: 0;
+}
+
+#theme-toggle:before {
+  content: "";
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: absolute;
+}
+
+#theme-toggle:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 90px;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+#theme-toggle:checked::after {
+  transform: translateX(100%);
 }
