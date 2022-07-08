@@ -6,14 +6,15 @@
 // ** Imported  **
 // *==============================================================================
 
-const toggleThemeButton = document.querySelector('.toggle-theme-button');
+const toggleThemeSwitch = document.querySelector('#theme-toggle');
 const root = document.documentElement;
 const themeText = document.querySelector('.current-theme-text');
 
 function toggleTheme() {
-  const switchClass = root.className === 'light' ? 'dark' : 'light';
+  const switchClass = toggleThemeSwitch.checked ? 'dark' : 'light';
+  console.log(switchClass);
   root.className = switchClass;
   themeText.innerText = switchClass;
 }
 
-toggleThemeButton.addEventListener('click', toggleTheme);
+toggleThemeSwitch.addEventListener('click', toggleTheme);

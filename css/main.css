@@ -97,7 +97,7 @@ p {
   cursor: pointer;
   width: 70px;
   height: 40px;
-  background: grey;
+  background-color: grey;
   display: block;
   border-radius: 100px;
   position: absolute;
@@ -115,6 +115,10 @@ p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 2;
+}
+
+#theme-toggle:checked::before {
+  background-color: #000000;
 }
 
 #theme-toggle:checked::after {

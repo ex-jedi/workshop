@@ -106,7 +106,7 @@ p {
   cursor: pointer;
   width: 70px;
   height: 40px;
-  background: grey;
+  background-color: grey;
   display: block;
   border-radius: 100px;
   position: absolute;
@@ -125,6 +125,11 @@ p {
   z-index: 2;
 }
 
+#theme-toggle:checked::before {
+  background-color: #000000;
+}
+
 #theme-toggle:checked::after {
   transform: translateX(100%);
+
 }

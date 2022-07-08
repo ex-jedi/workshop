@@ -1,2 +1,2 @@
-!function(){const e=document.querySelector(".toggle-theme-button"),t=document.documentElement,n=document.querySelector(".current-theme-text");e.addEventListener("click",(function(){const e="light"===t.className?"dark":"light";t.className=e,n.innerText=e}))}();
+!function(){const e=document.querySelector("#theme-toggle"),t=document.documentElement,c=document.querySelector(".current-theme-text");e.addEventListener("click",(function(){const n=e.checked?"dark":"light";console.log(n),t.className=n,c.innerText=n}))}();
 //# sourceMappingURL=main-min.js.map
