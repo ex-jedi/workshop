@@ -6,4 +6,9 @@
 // ** Imported  **
 // *==============================================================================
 
-console.log('Hello');
+const elem = document.querySelector('.slides-container');
+const flkty = new Flickity(elem, {
+  // options
+  cellAlign: 'left',
+  contain: true,
+});

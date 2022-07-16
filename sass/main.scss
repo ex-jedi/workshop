@@ -28,3 +28,8 @@ body {
   overflow-x: hidden;
   @include main-font-stack;
 }
+
+.slider-image {
+  width: 400px;
+  height: 400px;
+}
